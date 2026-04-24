@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+
+    /* colores */
+    --color-primary: #3498DB;
+    --color-primary-black: #2876a9;
+    --color-secondary: #ffffff;
+    --color-bg-primary: #EFF6FF;
+    --color-bg-blue: #CCE5FF;
+
+    --color-logo: #091D2E;
+
+
+    --color-good: #006D37;
+    --color-good-bg: #6bfe9c;
+
+    --color-danger: #B4271D;
+    --color-danger-bg: #FB5A49;
+
+    --color-form: #707881;
+}

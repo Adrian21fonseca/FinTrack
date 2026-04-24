@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    cursor: default;
+}
+
+#login-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-msj{
+    width: 65%;
+    height: 100vh;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-loginMsj{
+    width: 70%;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.login-msj h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login-msj p{
+    font-size: 16px;
+    font-weight: 200;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.decorecions{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 4px;
+}
+
+.decorecion{
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-bg-blue);
+    border-radius: 50px;
+}
+
+.decorecion:first-child{
+    width: 100px;
+}
+
+
+.login-form{
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    padding: 0 64px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.Name-FT{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Name-FT img{
+    width: 20px;
+    height: 20px;
+}
+
+.Name-FT h1{
+    font-size: 24px;
+    color: var(--color-logo);
+    margin: 0;
+}
+
+.tex-1 h2{
+    color: var(--color-logo);
+    font-size: 20px;
+    margin: 0;
+}
+
+.tex-1 p{
+    color: var(--color-form);
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+label{
+    font-size: 12px;
+    color: var(--color-form);
+    font-weight: 600;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1.5px solid var(--color-form);
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+input:focus{
+    border: 1.5px solid var(--color-primary);
+    transition: 1s ease;
+    outline: none;
+}
+
+.imput-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.imput-group input{
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
+button{
+    background-color: var(--color-primary);
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-secondary);
+    font-size: 16px;cursor: pointer;
+    transition: .4s ease;
+}
+
+button:hover{
+    background-color: var(--color-primary-black);
+    transition: .8s ease;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-form);
+    border-radius: 50%;
+    border: none;
+}
+
+.register{
+    margin-bottom: 30px;
+}
+
+.register p{
+    font-size: 16px;
+    margin: 0;
+    color: var(--color-form);
+}
+
+.register a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.derechosReservados{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.derechosReservados p{
+    font-size: 10px;
+    color: var(--color-form);
+    margin: 0;
+}
+
+.derechosReservados a{
+    text-decoration: none;
+    color: var(--color-primary-black);
+    font-weight: 600;
+}
+
+
+/* RESPONSIVES */
+
+@media (max-width: 570px){
+    .login-msj{
+        display: none;
+    }
+
+    .login-form{
+        width: 100%;
+        padding: 0 28px;
+    }
+
+    .Name-FT img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .Name-FT h1{
+        font-size: 32px;
+    }
+
+    .text-1 h2{
+        font-size: 26px;
+    }
+
+    input{
+    padding: 20px;
+    }
+}
