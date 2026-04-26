@@ -1,0 +1,506 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body{
+  display: flex;
+}
+
+.sidebar{ 
+  width:20% ;
+  min-width: 200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 50px;
+  color: var(--color-form);
+  box-shadow: 1px 1px 10px var(--color-bg-form);
+  position: relative;
+  z-index: 1;
+}
+
+.logoText h1{
+  font-size: 20px;
+  color: var(--color-logo);
+}
+
+.logoText span{
+  color: var(--color-primary);
+}
+
+.logoText p{
+  font-size: 12px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav ul li{
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav a{
+  color: var(--color-form);
+  font-weight: 600;
+}
+
+nav .pages-dash{
+  color: var(--color-primary);
+}
+
+nav .pages-transacciones:hover{
+  color: var(--color-primary);
+  transition: 1s ease;
+}
+
+nav ul li:first-child{
+  background-color: var(--color-bg-primary);
+  border-right: 2px solid var(--color-primary);
+}
+
+
+nav ul li:last-child{
+  transition: 1s ease;
+}
+
+nav ul li:last-child:hover{
+  transition: 1s ease;
+  background-color: var(--color-bg-primary);
+  border-right: 2px solid var(--color-primary);
+}
+
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-secondary);
+  padding: 12px 40px;
+  box-shadow: 1px 0px 10px var(--color-bg-form);
+}
+
+header h2{
+  font-size: 18px;
+  color: var(--color-logo);
+}
+
+.buscador input{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-form);
+}
+
+.buscador input:focus{
+  border: 1px solid var(--color-form);
+  outline: none;
+}
+
+.buscador input::placeholder{
+  color: var(--color-form);
+  font-size: 12px;
+}
+
+
+
+
+
+.container-informacion-cuenta{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 40px;
+}
+
+.cards-cuentas-totales{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-cuenta-total,
+.card-cuenta-enAlta,
+.card-cuenta-enBaja{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-secondary);
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 300px;
+  color: var(--color-logo);
+  box-shadow: 0 0 20px var(--color-bg-form);
+}
+
+.card-cuenta-total h3,
+.card-cuenta-enAlta h3,
+.card-cuenta-enBaja h3{
+  color: var(--color-form);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.parte-superior-total,
+.parte-superior-enAlta,
+.parte-superior-enBaja{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.parte-superior-total img,
+.parte-superior-enAlta img,
+.parte-superior-enBaja img{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.parte-superior-total img{
+  background-color: var(--color-bg-blue);
+}
+
+.parte-superior-enAlta img{
+  background-color: var(--color-good-bg);
+}
+
+.parte-superior-enBaja img{
+  background-color: var(--color-danger-bg);
+}
+
+.rendimiento,
+.ingresoSpam,
+.gastoSpam{
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+.rendimiento{
+  color: var(--color-primary-black);
+  background-color: var(--color-bg-blue);
+}
+
+.ingresoSpam{
+  background-color: var(--color-good-bg);
+  color: var(--color-good);
+}
+
+.gastoSpam{
+  color: var(--color-danger);
+  background-color: var(--color-danger-bg);
+}
+
+.balance-total{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.balance-total p{
+  font-weight: bold;
+  font-size: 32px;
+}
+
+
+
+
+
+.tableros{
+  display: flex;
+  gap: 50px;
+}
+
+.tablero-transaccion{
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  padding: 15px 14px;
+}
+
+.tablero-transaccion h4{
+  color: var(--color-logo);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tablero-transaccion form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form{
+  color: var(--color-form);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input-goup{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-goup input,
+select{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-bg-form);
+}
+
+.input-goup input,
+select:focus{
+  outline: none;
+  border: 1px solid var(--color-form);
+}
+
+
+.tipo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* espacio entre título y selector */
+  font-family: Arial, sans-serif;
+}
+
+.titulo {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-form);
+}
+
+.tipo-selector {
+  padding: 5px;
+  background-color: var(--color-bg-blue);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tipo-selector input {
+  display: none; /* ocultamos los radios */
+}
+
+.tipo-selector label {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tipo-selector input:checked + label {
+  background-color: var(--color-secondary); /* color activo */
+  color: var(--color-primary-black);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+form button{
+  padding: 15px 10px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary-black);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.tablero-resumen{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  padding: 15px 14px;
+  color: var(--color-logo);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.encabezado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.encabezado h4{
+  font-size: 20px;
+}
+
+.encabezado a{
+  color: var(--color-primary-black);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resumen-de-transacciones{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.transaccion-resiente{
+  background-color: var(--color-danger-bg);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.Descripcion-Tipo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Descripcion-Tipo .descripcion{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Descripcion-Tipo .tipo-fecha, span{
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-form);
+  font-weight: 600;
+}
+
+.Descripcion-Tipo .monto{
+  color: var(--color-danger);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+@media (max-width: 570px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: unset;
+    min-height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-secondary);
+    z-index: 1000;
+  }
+
+  .logoText {
+    display: none; /* ocultamos logo/texto en móvil */
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  nav ul li {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: none !important;
+    background: none;
+  }
+
+  nav ul li img{
+    width: 25px;
+    height: 25px;
+  }
+
+  nav a {
+    font-size: 12px; /* texto más pequeño */
+    font-weight: 600;
+  }
+
+  main {
+    margin-bottom: 80px; /* espacio para que el contenido no quede tapado */
+  }
+
+  header {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .buscador input {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .cards-cuentas-totales {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-cuenta-total,
+  .card-cuenta-enAlta,
+  .card-cuenta-enBaja {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .tableros {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tablero-transaccion,
+  .tablero-resumen {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .Descripcion-Tipo .descripcion {
+    font-size: 14px;
+  }
+
+  .Descripcion-Tipo .monto {
+    font-size: 14px;
+  }
+}

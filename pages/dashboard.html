@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/images/Logo FinTrack.png">
+    <title>FinTrack - Dashboard</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+        
+        <div class="logoText">
+            <h1>
+                Fin<span>Track</span>
+            </h1>
+            <p>Gestión de tus Finanzas</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><img src="../assets/icons/Icon-dashboard.svg" alt="dashboard"><a class="pages-dash" href="../pages/dashboard.html">Tablero</a></li>
+                <li><img src="../assets/icons/Icon-transacciones.svg" alt="transacciones"><a class="pages-transacciones" href="../pages/dashboard.html">Transacciones</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main>
+
+        <header>
+            <div class="text-resumen">
+                <h2>Tablero</h2>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+            </div>
+        </header>
+
+        <section class="container-informacion-cuenta">
+
+            <div class="cards-cuentas-totales">
+
+                <div class="card-cuenta-total">
+
+                    <div class="parte-superior-total">
+                        <img src="../assets/icons/Icon-wallet.svg" alt="wallet">
+                        <span class="rendimiento">+2.4%</span>
+                    </div>
+
+                    <div class="balance-total">
+                        <h3>BALANCE NETO</h3>
+                        <p class="Saldo-total">
+                            $
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card-cuenta-enAlta">
+
+                    <div class="parte-superior-enAlta">
+                        <img src="../assets/icons/Icon-enAlta.svg" alt="Grafica en alta">
+                        <span class="ingresoSpam">Mensual</span>
+                    </div>
+
+                    <div class="balance-total">
+                        <h3>INGRESOS MENSUALES</h3>
+                        <p class="Saldo-total">
+                            $
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card-cuenta-enBaja">
+
+                    <div class="parte-superior-enBaja">
+                        <img src="../assets/icons/Icon-enBaja.svg" alt="Grafica en baja">
+                        <span class="gastoSpam">Mensual</span>
+                    </div>
+
+                    <div class="balance-total">
+                        <h3>GASTOS MENSUALES</h3>
+                        <p class="Saldo-negativo-total">
+                            $
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tableros">
+
+                <div class="tablero-transaccion">
+
+                    <h4>Registro Rápido</h4>
+
+                    <form action="">
+                        <div class="input-goup">
+                            <label for="Number">Monto</label>
+                            <input type="number" id="Number" name="Number" placeholder="$ 0.00 COP">
+                        </div>
+                        <div class="input-goup">
+                            <label for="descripcion">Descripción</label>
+                            <input type="text" id="descripcion" name="descripcion" placeholder="¿Para qué fue esto?">
+                        </div>
+                        <div class="input-goup">
+                            <label for="categoria">Categoría</label>
+                            <select id="categoria" name="categoria">
+                            </select>
+                        </div>
+
+                        <div class="tipo-container">
+                            <span class="titulo">Tipo</span>
+                            <div class="tipo-selector">
+                                <input type="radio" id="gasto" name="tipo" checked>
+                                <label for="gasto">Gasto</label>
+
+                                <input type="radio" id="ingreso" name="tipo">
+                                <label for="ingreso">Ingreso</label>
+                            </div>
+                        </div>
+
+
+                        <button type="submit">Añadir Transacción</button>
+                    </form>
+
+                </div>
+
+                <div class="tablero-resumen">
+
+                    <div class="encabezado">
+                        <h4>Transacciones Recientes</h4>
+                        <a href="#">Ver todo</a>
+                    </div>
+
+                    <div class="resumen-de-transacciones">
+
+                            <div class="transaccion-resiente">
+
+                                    <div class="Descripcion-Tipo">
+
+                                        <div class="texto-descriptivo">
+
+                                            <p class="descripcion">Supermercado</p>
+
+                                            <div class="tipo-fecha">
+
+                                                <p class="tipo">Comestible</p>
+                                                <span>•</span>
+                                                <p class="fecha">15/03/2023</p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="coste-transaccion">
+                                            <p class="monto">$ -15,000.00</p>
+                                        </div>
+
+                                    </div>
+
+                            </div>
+
+                            
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
