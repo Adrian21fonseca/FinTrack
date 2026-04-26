@@ -14,7 +14,7 @@
         
         <div class="logoText">
             <h1>
-                Fin<span>Track</span>
+                Fin<span class="spanLogo">Track</span>
             </h1>
             <p>Gestión de tus Finanzas</p>
         </div>
@@ -25,6 +25,11 @@
                 <li><img src="../assets/icons/Icon-transacciones.svg" alt="transacciones"><a class="pages-transacciones" href="../pages/dashboard.html">Transacciones</a></li>
             </ul>
         </nav>
+
+        <div class="btn">
+            <button class="closeSesion">Cerrar Sesión</button>
+        </div>
+        
 
     </aside>
 
@@ -84,7 +89,7 @@
 
                     <div class="balance-total">
                         <h3>GASTOS MENSUALES</h3>
-                        <p class="Saldo-negativo-total">
+                        <p class="Saldo-total">
                             $
                         </p>
                     </div>
@@ -99,10 +104,10 @@
 
                     <h4>Registro Rápido</h4>
 
-                    <form action="">
+                    <form autocomplete="off" action="">
                         <div class="input-goup">
                             <label for="Number">Monto</label>
-                            <input type="number" id="Number" name="Number" placeholder="$ 0.00 COP">
+                            <input type="text" id="Number" placeholder="100000" inputmode="numeric">
                         </div>
                         <div class="input-goup">
                             <label for="descripcion">Descripción</label>
@@ -140,7 +145,11 @@
 
                     <div class="resumen-de-transacciones">
 
-                            <div class="transaccion-resiente">
+                        <p class="mjs-sin-transacciones">
+                            Aun no hay transacciones recientes.
+                        </p>
+
+                            <!-- <div class="transaccion-resiente-gasto">
 
                                     <div class="Descripcion-Tipo">
 
@@ -166,7 +175,31 @@
 
                             </div>
 
-                            
+                            <div class="transaccion-resiente-ingreso">
+
+                                    <div class="Descripcion-Tipo">
+
+                                        <div class="texto-descriptivo">
+
+                                            <p class="descripcion">Supermercado</p>
+
+                                            <div class="tipo-fecha">
+
+                                                <p class="tipo">Comestible</p>
+                                                <span>•</span>
+                                                <p class="fecha">15/03/2023</p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="coste-transaccion">
+                                            <p class="monto">$ +15,000.00</p>
+                                        </div>
+
+                                    </div>
+
+                            </div> -->
 
                     </div>
 
@@ -178,5 +211,7 @@
 
     </main>
 
+
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>
