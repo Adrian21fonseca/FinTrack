@@ -478,20 +478,16 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .sidebar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    min-width: unset;
+    min-width: 100%;
     height: fit-content;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     background-color: var(--color-secondary);
-    z-index: 1000;
-
-    display: none;
   }
 
   .logoText {
@@ -509,21 +505,25 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 5px 10px;
     border-radius: 0;
     border: none !important;
-    background: none;
+    gap: 5px;
+  }
+
+  nav ul li:first-child {
+    background: none !important;
   }
 
   nav ul li img{
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
   }
 
   nav a {
-    font-size: 12px; 
+    font-size: 10px; 
     font-weight: 600;
   }
 
   main {
-    margin-bottom: 80px; 
+    margin-bottom: 70px; 
   }
 
   header {
@@ -562,17 +562,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     min-width: unset;
   }
-
-  .resumen-de-transacciones{
-  flex: 1; /* ocupa el espacio disponible */
-  overflow-y: auto;
-}
-
-  .tablero-resumen{
-  display: flex;
-  flex-direction: column;
-  height: 360px; /* altura fija */
-}
 
   .Descripcion-Tipo .descripcion {
     font-size: 14px;
