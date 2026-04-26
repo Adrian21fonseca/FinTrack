@@ -143,6 +143,23 @@ input[type="checkbox"] {
     accent-color: var(--color-primary);
 }
 
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon input {
+    width: 100%;
+}
+
+.input-icon img {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
 button{
     background-color: var(--color-primary);
     padding: 20px;

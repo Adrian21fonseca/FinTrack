@@ -1,5 +1,16 @@
 const form = document.querySelector("form");
 
+const toggle = document.getElementById("togglePassword");
+const password = document.getElementById("password");
+
+toggle.addEventListener("click", () => {
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+});
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 

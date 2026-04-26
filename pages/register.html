@@ -35,26 +35,39 @@
                 <p>Ingresa tus datos para comenzar tu experiencia.</p>
             </div>
 
-            <form action="">
+            <form autocomplete="off" action="">
                 <div class="input-container">
                     <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" placeholder="Ej: Juan Ramirez" required>
+                    <input autocomplete="off" type="text" id="name" name="name" placeholder="Ej: Juan Ramirez" required>
                 </div>
 
                 <div class="input-container">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@fintrack.com" required>
+                    <input autocomplete="off" type="email" id="email" name="email" placeholder="ejemplo@fintrack.com" required>
                 </div>
 
                 <div class="input-container-passwords">
+
                     <div class="input-container-password">
                         <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        
+                        <div class="input-icon">
+                            <input autocomplete="new-password" type="password" id="password" name="password" placeholder="••••••••" required>
+                            <img src="../assets/icons/Visualizacion.svg" id="togglePassword" alt="ver contraseña">
+                        </div>
+
                     </div>
+
                     <div class="input-container-password">
                         <label for="confirm-password">Confirma la Contraseña</label>
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                        
+                        <div class="input-icon">
+                            <input autocomplete="new-password" type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                            <img src="../assets/icons/Visualizacion.svg" id="toggleConfirmPassword" alt="ver contraseña">
+                        </div>
+
                     </div>
+
                 </div>
 
                 <div class="input-group">

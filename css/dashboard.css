@@ -560,6 +560,17 @@ input[type=number]::-webkit-outer-spin-button {
     min-width: unset;
   }
 
+  .resumen-de-transacciones{
+  flex: 1; /* ocupa el espacio disponible */
+  overflow-y: auto;
+}
+
+  .tablero-resumen{
+  display: flex;
+  flex-direction: column;
+  max-height: 388px; /* altura fija */
+}
+
   .Descripcion-Tipo .descripcion {
     font-size: 14px;
   }

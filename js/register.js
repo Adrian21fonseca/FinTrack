@@ -1,5 +1,23 @@
 const form = document.querySelector("form");
 
+const togglePassword = document.getElementById("togglePassword");
+const password = document.getElementById("password");
+
+const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
+const confirmPassword = document.getElementById("confirm-password");
+
+// contraseña principal
+togglePassword.addEventListener("click", () => {
+    password.type = password.type === "password" ? "text" : "password";
+});
+
+// confirmar contraseña
+toggleConfirmPassword.addEventListener("click", () => {
+    confirmPassword.type = confirmPassword.type === "password" ? "text" : "password";
+});
+
+
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
