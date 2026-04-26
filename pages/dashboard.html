@@ -212,6 +212,33 @@
     </main>
 
 
+    <div id="modalEditar" class="modal hidden">
+  <div class="modal-content">
+
+    <h3>Editar Transacción</h3>
+
+    <input type="number" id="editMonto" placeholder="Monto">
+    <input type="text" id="editDescripcion" placeholder="Descripción">
+
+    <select id="editCategoria"></select>
+
+    <div class="tipo-selector">
+      <input type="radio" id="editGasto" name="editTipo" value="gasto">
+      <label for="editGasto">Gasto</label>
+
+      <input type="radio" id="editIngreso" name="editTipo" value="ingreso">
+      <label for="editIngreso">Ingreso</label>
+    </div>
+
+    <div class="modal-buttons">
+      <button id="guardarEdit">Guardar</button>
+      <button id="cancelarEdit">Cancelar</button>
+    </div>
+
+  </div>
+</div>
+
+
     <script src="../js/dashboard.js"></script>
 </body>
 </html>
