@@ -489,6 +489,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
     background-color: var(--color-secondary);
     z-index: 1000;
+
+    display: none;
   }
 
   .logoText {
@@ -520,7 +522,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   main {
-    margin-bottom: 100px; 
+    margin-bottom: 80px; 
   }
 
   header {
@@ -568,7 +570,7 @@ input[type=number]::-webkit-outer-spin-button {
   .tablero-resumen{
   display: flex;
   flex-direction: column;
-  height: 300px; /* altura fija */
+  height: 360px; /* altura fija */
 }
 
   .Descripcion-Tipo .descripcion {
