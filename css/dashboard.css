@@ -568,7 +568,7 @@ input[type=number]::-webkit-outer-spin-button {
   .tablero-resumen{
   display: flex;
   flex-direction: column;
-  height: 388px; /* altura fija */
+  height: 300px; /* altura fija */
 }
 
   .Descripcion-Tipo .descripcion {
