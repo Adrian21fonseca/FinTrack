@@ -242,4 +242,4 @@ contenedor.addEventListener("click", (e) => {
 renderTransacciones();
 renderResumen();
 
-localStorage.removeItem(`tx_${usuario.email}`);
+// localStorage.removeItem(`tx_${usuario.email}`);
